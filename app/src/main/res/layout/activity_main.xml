@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:clipToPadding="false" android:background="#F3F7FC">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingTop="24dp"
+        android:paddingBottom="24dp" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/app_name" android:textColor="#163450" android:textSize="32sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/app_tagline" android:textColor="#4B6279" android:textSize="14sp" android:layout_marginBottom="18dp" />
+        <TextView android:id="@+id/monitorStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/state_stopped" android:textStyle="bold" android:textSize="18sp" android:textColor="#16663E"
+            android:padding="14dp" android:background="#E3F2EA" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/connectivity" android:textColor="#163450" android:textSize="18sp" android:textStyle="bold"
+            android:layout_marginTop="20dp" android:layout_marginBottom="8dp" />
+        <TextView android:id="@+id/internetStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/state_unknown" android:textSize="16sp" android:textColor="#234A69" android:paddingBottom="8dp" />
+        <TextView android:id="@+id/wifiStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/state_unknown" android:textSize="16sp" android:textColor="#234A69" android:paddingBottom="8dp" />
+        <TextView android:id="@+id/trainStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/state_unknown" android:textSize="16sp" android:textColor="#234A69" android:paddingBottom="8dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/monitor_mode" android:textColor="#163450" android:textSize="18sp" android:textStyle="bold"
+            android:layout_marginTop="12dp" android:layout_marginBottom="8dp" />
+        <Spinner android:id="@+id/modeSpinner" android:layout_width="match_parent" android:layout_height="48dp" />
+        <TextView android:text="@string/mode_hint" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="13sp" android:textColor="#526B83" android:layout_marginTop="4dp" />
+        <CheckBox android:id="@+id/wifiAlerts" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:checked="true" android:text="@string/alert_wifi" android:layout_marginTop="14dp" />
+        <CheckBox android:id="@+id/internetAlerts" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:checked="true" android:text="@string/alert_internet" />
+        <Button android:id="@+id/monitorButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/label_start" android:minHeight="52dp" android:layout_marginTop="18dp" />
+        <Button android:id="@+id/testButton" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/btn_test" android:minHeight="48dp" android:layout_marginTop="6dp" />
+        <TextView android:text="@string/label_last" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18sp" android:textStyle="bold" android:textColor="#163450"
+            android:layout_marginTop="20dp" android:layout_marginBottom="6dp" />
+        <TextView android:id="@+id/lastEvent" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/history_empty" android:textSize="14sp" android:textColor="#526B83" />
+        <TextView android:text="@string/hint_watch" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="13sp" android:textColor="#526B83" android:layout_marginTop="18dp" />
+        <TextView android:text="@string/hint_o_sm" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="13sp" android:textColor="#526B83" android:layout_marginTop="8dp" />
+        <TextView android:text="@string/hint_battery" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="13sp" android:textColor="#526B83" android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>

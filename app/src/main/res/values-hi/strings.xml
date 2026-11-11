@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">रेल + अलर्ट · इंटरनेट और वाई-फ़ाई निगरानी</string>
+    <string name="state_stopped">निगरानी बंद है</string>
+    <string name="state_running">निगरानी चालू है</string>
+    <string name="connectivity">कनेक्शन स्थिति</string>
+    <string name="label_internet">इंटरनेट</string>
+    <string name="label_wifi">वाई-फ़ाई</string>
+    <string name="label_train">ट्रेन</string>
+    <string name="state_unknown">जाँच जारी…</string>
+    <string name="state_connected">कनेक्ट है</string>
+    <string name="state_disconnected">डिस्कनेक्ट है</string>
+    <string name="state_rail_yes">ट्रेन मोड चालू है</string>
+    <string name="state_rail_no">ट्रेन नहीं मिली</string>
+    <string name="state_rail_wait">ट्रेन का पता लगने की प्रतीक्षा</string>
+    <string name="monitor_mode">निगरानी मोड</string>
+    <string name="mode_always">हमेशा निगरानी करें</string>
+    <string name="mode_manual">ट्रेन मोड (मैनुअल)</string>
+    <string name="mode_auto">ट्रेन मोड (स्वचालित · प्रयोगात्मक)</string>
+    <string name="mode_hint">स्वचालित मोड GPS गति और OpenStreetMap की रेल पटरियों का उपयोग करता है। ट्रेन छूट सकती है या पास की सड़क गलत पहचानी जा सकती है। मैनुअल मोड अधिक भरोसेमंद है।</string>
+    <string name="alert_wifi">वाई-फ़ाई टूटने और लौटने पर अलर्ट</string>
+    <string name="alert_internet">इंटरनेट टूटने और लौटने पर अलर्ट</string>
+    <string name="label_start">निगरानी शुरू करें</string>
+    <string name="label_stop">निगरानी बंद करें</string>
+    <string name="btn_test">परीक्षण सूचना भेजें</string>
+    <string name="label_last">अंतिम घटना</string>
+    <string name="history_empty">अभी कोई घटना नहीं</string>
+    <string name="hint_watch">घड़ी: Fitbit/Google Health में WIFILERT की ऐप सूचनाएँ चालू करें। फ़ोन और घड़ी ब्लूटूथ से जुड़े रहने चाहिए।</string>
+    <string name="hint_o_sm">गोपनीयता: केवल प्रयोगात्मक स्वचालित ट्रेन मोड पास की पटरियाँ खोजने के लिए अनुमानित GPS स्थान OpenStreetMap की सार्वजनिक Overpass सेवा को भेजता है। अन्य मोड डेटा नहीं भेजते।</string>
+    <string name="hint_battery">Android बैटरी सेटिंग में WIFILERT को बिना रोक-टोक पृष्ठभूमि में चलने दें। निगरानी के लिए स्थायी सूचना आवश्यक है।</string>
+    <string name="permission_needed">इस सुविधा के लिए सूचना या स्थान की अनुमति चाहिए</string>
+    <string name="notif_monitor_channel">निगरानी सेवा</string>
+    <string name="notif_alert_channel">कनेक्शन अलर्ट</string>
+    <string name="notif_service_title">WIFILERT निगरानी कर रहा है</string>
+    <string name="notif_service_body">इंटरनेट और वाई-फ़ाई की स्थिति देखी जा रही है</string>
+    <string name="notif_internet_off_title">इंटरनेट कनेक्शन टूट गया</string>
+    <string name="notif_internet_on_title">इंटरनेट कनेक्शन वापस आ गया</string>
+    <string name="notif_wifi_lost_title">वाई-फ़ाई डिस्कनेक्ट हुआ</string>
+    <string name="notif_wifi_back_title">वाई-फ़ाई फिर कनेक्ट हुआ</string>
+    <string name="notif_wifi_no_internet_title">वाई-फ़ाई पर इंटरनेट नहीं</string>
+    <string name="notif_wifi_internet_back_title">वाई-फ़ाई का इंटरनेट लौट आया</string>
+    <string name="notif_body_off">कनेक्शन टूट गया। लौटने पर सूचना मिलेगी।</string>
+    <string name="notif_body_on">आपका इंटरनेट फिर काम कर रहा है।</string>
+    <string name="notif_wifi_no_internet">वाई-फ़ाई जुड़ा है, लेकिन Android इंटरनेट पहुँच की पुष्टि नहीं कर सका।</string>
+    <string name="notif_wifi_restored">वाई-फ़ाई कनेक्शन फिर उपलब्ध है।</string>
+    <string name="notif_test_title">WIFILERT परीक्षण सूचना</string>
+    <string name="notif_test_body">घड़ी में ऐप सूचनाएँ चालू हैं तो यह संदेश वहाँ भी दिखना चाहिए।</string>
+    <string name="event_train_detected">ट्रेन का पता चला</string>
+    <string name="event_train_ended">ट्रेन अब नहीं मिल रही</string>
+    <string-array name="modes">
+        <item>हमेशा निगरानी करें</item>
+        <item>ट्रेन मोड (मैनुअल)</item>
+        <item>ट्रेन मोड (स्वचालित · प्रयोगात्मक)</item>
+    </string-array>
+</resources>

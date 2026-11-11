@@ -1,0 +1,57 @@
+name: Android Debug APK
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Allow only user-approved WIFILERT logo assets
+        shell: bash
+        run: |
+          python3 - <<'PY_VALIDATE_MEDIA'
+          from pathlib import Path
+          import hashlib
+          import sys
+          approved = {
+                "app/src/main/res/mipmap-hdpi/ic_launcher.png": "4c2bb6f81d689d11fa75289ded3138c79c6bda2c633307a6a00a48eeda9417d9",
+                "app/src/main/res/mipmap-mdpi/ic_launcher.png": "34ee86d3faa89c800ec16ab4f2e738680ccb5b8f2f9d87847b1a7c9ec3fb86ae",
+                "app/src/main/res/mipmap-xhdpi/ic_launcher.png": "d8cb09b5d4db9c7733389d6d0f769dc2d0574d4c06edfd95e05831d43c213d2c",
+                "app/src/main/res/mipmap-xxhdpi/ic_launcher.png": "e3a616fc38396d405153446b441dcaa523cee2fb81f2dd198b3252d854c6b867",
+                "app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": "86eacf7c99b6009a0f80bf0eea87e2e9beb6ab23d45cd41c6df43606edc9e7aa",
+                "docs/media/wifilert_logo_approved.png": "80f64838357b4fd729c47d37c0b7e184eb899ccaf2ccb4d7e7f28ca3b4ab72e0",
+          }
+          media_extensions = {".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".mp4", ".mov", ".webm", ".mp3", ".wav", ".ogg", ".flac", ".aac", ".m4a"}
+          media_files = {p.as_posix() for p in Path('.').rglob('*') if p.is_file() and p.suffix.lower() in media_extensions}
+          media_files = {p[2:] if p.startswith('./') else p for p in media_files}
+          unknown = media_files - set(approved)
+          missing = set(approved) - media_files
+          changed = [p for p in approved if p in media_files and hashlib.sha256(Path(p).read_bytes()).hexdigest() != approved[p]]
+          if unknown or missing or changed:
+              print('Unapproved media:', sorted(unknown))
+              print('Missing approved media:', sorted(missing))
+              print('Changed approved media:', sorted(changed))
+              sys.exit(1)
+          print('Only the approved WIFILERT logo and its size variants are present.')
+          PY_VALIDATE_MEDIA
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install Android SDK
+        run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Build debug APK
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wifilert-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error

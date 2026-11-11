@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">Train + alerte · Surveillance Internet et Wi-Fi</string>
+    <string name="state_stopped">Surveillance arrêtée</string>
+    <string name="state_running">Surveillance active</string>
+    <string name="connectivity">État de connexion</string>
+    <string name="label_internet">Internet</string>
+    <string name="label_wifi">Wi-Fi</string>
+    <string name="label_train">Train</string>
+    <string name="state_unknown">Vérification…</string>
+    <string name="state_connected">Connecté</string>
+    <string name="state_disconnected">Déconnecté</string>
+    <string name="state_rail_yes">Mode train actif</string>
+    <string name="state_rail_no">Aucun train détecté</string>
+    <string name="state_rail_wait">Détection du train en attente</string>
+    <string name="monitor_mode">Mode de surveillance</string>
+    <string name="mode_always">Toujours surveiller</string>
+    <string name="mode_manual">Mode train (manuel)</string>
+    <string name="mode_auto">Mode train (automatique · expérimental)</string>
+    <string name="mode_hint">Le mode automatique utilise le GPS et les voies OpenStreetMap. Il peut manquer un train ou confondre une route voisine avec une voie. Le mode manuel est plus fiable.</string>
+    <string name="alert_wifi">Alerter des pertes et retours du Wi-Fi</string>
+    <string name="alert_internet">Alerter des pertes et retours d’Internet</string>
+    <string name="label_start">Démarrer la surveillance</string>
+    <string name="label_stop">Arrêter la surveillance</string>
+    <string name="btn_test">Envoyer une notification test</string>
+    <string name="label_last">Dernier événement</string>
+    <string name="history_empty">Aucun événement pour le moment</string>
+    <string name="hint_watch">Montre : activez les notifications WIFILERT dans Fitbit/Google Health. Le téléphone et la montre doivent rester reliés en Bluetooth.</string>
+    <string name="hint_o_sm">Confidentialité : seul le mode automatique expérimental transmet une position GPS approximative au service public Overpass d’OpenStreetMap pour trouver les voies proches. Aucun envoi dans les autres modes.</string>
+    <string name="hint_battery">Autorisez WIFILERT à fonctionner sans restrictions de batterie en arrière-plan. Une notification permanente est nécessaire.</string>
+    <string name="permission_needed">Autorisation de notification ou de localisation requise</string>
+    <string name="notif_monitor_channel">Service de surveillance</string>
+    <string name="notif_alert_channel">Alertes de connexion</string>
+    <string name="notif_service_title">WIFILERT surveille la connexion</string>
+    <string name="notif_service_body">Suivi des changements Internet et Wi-Fi</string>
+    <string name="notif_internet_off_title">Connexion Internet perdue</string>
+    <string name="notif_internet_on_title">Connexion Internet rétablie</string>
+    <string name="notif_wifi_lost_title">Wi-Fi déconnecté</string>
+    <string name="notif_wifi_back_title">Wi-Fi reconnecté</string>
+    <string name="notif_wifi_no_internet_title">Wi-Fi sans Internet</string>
+    <string name="notif_wifi_internet_back_title">Internet Wi-Fi rétabli</string>
+    <string name="notif_body_off">Connexion perdue. Une alerte suivra lors du rétablissement.</string>
+    <string name="notif_body_on">Votre connexion Internet fonctionne à nouveau.</string>
+    <string name="notif_wifi_no_internet">Le Wi-Fi est connecté, mais Android ne valide pas l’accès Internet.</string>
+    <string name="notif_wifi_restored">La connexion Wi-Fi est de nouveau disponible.</string>
+    <string name="notif_test_title">Notification test WIFILERT</string>
+    <string name="notif_test_body">Si les notifications d’applications sont activées sur la montre, elle devrait aussi l’afficher.</string>
+    <string name="event_train_detected">Train détecté</string>
+    <string name="event_train_ended">Train non détecté</string>
+    <string-array name="modes">
+        <item>Toujours surveiller</item>
+        <item>Mode train (manuel)</item>
+        <item>Mode train (automatique · expérimental)</item>
+    </string-array>
+</resources>

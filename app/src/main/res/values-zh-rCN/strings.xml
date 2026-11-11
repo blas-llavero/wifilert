@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">铁路提醒 · 互联网和 Wi-Fi 监测</string>
+    <string name="state_stopped">监测已停止</string>
+    <string name="state_running">正在监测</string>
+    <string name="connectivity">连接状态</string>
+    <string name="label_internet">互联网</string>
+    <string name="label_wifi">Wi-Fi</string>
+    <string name="label_train">列车</string>
+    <string name="state_unknown">正在检查…</string>
+    <string name="state_connected">已连接</string>
+    <string name="state_disconnected">已断开</string>
+    <string name="state_rail_yes">列车模式已开启</string>
+    <string name="state_rail_no">未检测到列车</string>
+    <string name="state_rail_wait">等待检测列车</string>
+    <string name="monitor_mode">监测模式</string>
+    <string name="mode_always">始终监测</string>
+    <string name="mode_manual">列车模式（手动）</string>
+    <string name="mode_auto">列车模式（自动 · 实验性）</string>
+    <string name="mode_hint">自动模式使用 GPS 移动速度和 OpenStreetMap 铁路线数据，可能漏检列车或误判邻近道路。手动模式更可靠。</string>
+    <string name="alert_wifi">Wi-Fi 断开或恢复时提醒</string>
+    <string name="alert_internet">互联网中断或恢复时提醒</string>
+    <string name="label_start">开始监测</string>
+    <string name="label_stop">停止监测</string>
+    <string name="btn_test">发送测试通知</string>
+    <string name="label_last">最近事件</string>
+    <string name="history_empty">暂无事件</string>
+    <string name="hint_watch">手表：在 Fitbit/Google Health 中开启 WIFILERT 的应用通知。手机与手表需要保持蓝牙连接。</string>
+    <string name="hint_o_sm">隐私：仅实验性自动列车模式会向 OpenStreetMap 公共 Overpass 服务发送大致 GPS 坐标，以查找附近铁路线。其他模式不上传数据。</string>
+    <string name="hint_battery">请在 Android 电池设置中允许 WIFILERT 不受限制地后台运行。监测需要常驻通知。</string>
+    <string name="permission_needed">此功能需要通知或位置权限</string>
+    <string name="notif_monitor_channel">监测服务</string>
+    <string name="notif_alert_channel">连接提醒</string>
+    <string name="notif_service_title">WIFILERT 正在监测</string>
+    <string name="notif_service_body">监测互联网和 Wi-Fi 变化</string>
+    <string name="notif_internet_off_title">互联网连接中断</string>
+    <string name="notif_internet_on_title">互联网连接已恢复</string>
+    <string name="notif_wifi_lost_title">Wi-Fi 已断开</string>
+    <string name="notif_wifi_back_title">Wi-Fi 已重新连接</string>
+    <string name="notif_wifi_no_internet_title">Wi-Fi 无互联网</string>
+    <string name="notif_wifi_internet_back_title">Wi-Fi 互联网已恢复</string>
+    <string name="notif_body_off">连接已断开，恢复时将通知您。</string>
+    <string name="notif_body_on">互联网连接已恢复正常。</string>
+    <string name="notif_wifi_no_internet">已连接 Wi-Fi，但 Android 无法确认互联网访问。</string>
+    <string name="notif_wifi_restored">Wi-Fi 连接已恢复。</string>
+    <string name="notif_test_title">WIFILERT 测试通知</string>
+    <string name="notif_test_body">如果手表已开启应用通知，此消息也应显示在手表上。</string>
+    <string name="event_train_detected">检测到列车</string>
+    <string name="event_train_ended">不再检测到列车</string>
+    <string-array name="modes">
+        <item>始终监测</item>
+        <item>列车模式（手动）</item>
+        <item>列车模式（自动 · 实验性）</item>
+    </string-array>
+</resources>

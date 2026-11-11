@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">Rail + Alert · Internet and Wi-Fi monitor</string>
+    <string name="state_stopped">Monitoring stopped</string>
+    <string name="state_running">Monitoring active</string>
+    <string name="connectivity">Connection status</string>
+    <string name="label_internet">Internet</string>
+    <string name="label_wifi">Wi-Fi</string>
+    <string name="label_train">Train</string>
+    <string name="state_unknown">Checking…</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_disconnected">Disconnected</string>
+    <string name="state_rail_yes">Train mode active</string>
+    <string name="state_rail_no">Train not detected</string>
+    <string name="state_rail_wait">Waiting for train detection</string>
+    <string name="monitor_mode">Monitoring mode</string>
+    <string name="mode_always">Always monitor</string>
+    <string name="mode_manual">Train mode (manual)</string>
+    <string name="mode_auto">Train mode (automatic · experimental)</string>
+    <string name="mode_hint">Automatic mode uses GPS movement and OpenStreetMap railway data. It may miss trains or mistake nearby roads for railways. Manual mode is more reliable.</string>
+    <string name="alert_wifi">Alert when Wi-Fi disconnects or returns</string>
+    <string name="alert_internet">Alert when internet is lost or restored</string>
+    <string name="label_start">Start monitoring</string>
+    <string name="label_stop">Stop monitoring</string>
+    <string name="btn_test">Send test notification</string>
+    <string name="label_last">Latest event</string>
+    <string name="history_empty">No events yet</string>
+    <string name="hint_watch">Watch: enable WIFILERT app notifications in your Fitbit/Google Health app. The phone and watch must remain connected via Bluetooth.</string>
+    <string name="hint_o_sm">Privacy: only experimental automatic train mode sends approximate GPS coordinates to the public OpenStreetMap Overpass service to find nearby rail tracks. Nothing is uploaded in other modes.</string>
+    <string name="hint_battery">Keep WIFILERT background activity unrestricted in Android battery settings. Monitoring requires a persistent notification.</string>
+    <string name="permission_needed">Notification or location permission is required for this feature</string>
+    <string name="notif_monitor_channel">Monitoring service</string>
+    <string name="notif_alert_channel">Connection alerts</string>
+    <string name="notif_service_title">WIFILERT is monitoring</string>
+    <string name="notif_service_body">Tracking internet and Wi-Fi changes</string>
+    <string name="notif_internet_off_title">Internet connection lost</string>
+    <string name="notif_internet_on_title">Internet connection restored</string>
+    <string name="notif_wifi_lost_title">Wi-Fi disconnected</string>
+    <string name="notif_wifi_back_title">Wi-Fi connected again</string>
+    <string name="notif_wifi_no_internet_title">Wi-Fi has no internet</string>
+    <string name="notif_wifi_internet_back_title">Wi-Fi internet restored</string>
+    <string name="notif_body_off">Connection lost. You will be notified when it returns.</string>
+    <string name="notif_body_on">Your internet connection is working again.</string>
+    <string name="notif_wifi_no_internet">Connected to Wi-Fi, but Android cannot validate internet access.</string>
+    <string name="notif_wifi_restored">The Wi-Fi connection is available again.</string>
+    <string name="notif_test_title">WIFILERT test notification</string>
+    <string name="notif_test_body">If watch app notifications are enabled, this should also appear on your watch.</string>
+    <string name="event_train_detected">Train detected</string>
+    <string name="event_train_ended">Train no longer detected</string>
+    <string-array name="modes">
+        <item>Always monitor</item>
+        <item>Train mode (manual)</item>
+        <item>Train mode (automatic · experimental)</item>
+    </string-array>
+</resources>

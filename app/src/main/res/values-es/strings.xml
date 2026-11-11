@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">Tren + aviso · Monitor de Internet y Wi-Fi</string>
+    <string name="state_stopped">Monitorización detenida</string>
+    <string name="state_running">Monitorización activa</string>
+    <string name="connectivity">Estado de la conexión</string>
+    <string name="label_internet">Internet</string>
+    <string name="label_wifi">Wi-Fi</string>
+    <string name="label_train">Tren</string>
+    <string name="state_unknown">Comprobando…</string>
+    <string name="state_connected">Conectado</string>
+    <string name="state_disconnected">Desconectado</string>
+    <string name="state_rail_yes">Modo tren activo</string>
+    <string name="state_rail_no">No se ha detectado ningún tren</string>
+    <string name="state_rail_wait">Esperando detección del tren</string>
+    <string name="monitor_mode">Modo de monitorización</string>
+    <string name="mode_always">Monitorizar siempre</string>
+    <string name="mode_manual">Modo tren (manual)</string>
+    <string name="mode_auto">Modo tren (automático · experimental)</string>
+    <string name="mode_hint">El modo automático utiliza movimiento GPS y vías de OpenStreetMap. Puede no detectar trenes o confundir carreteras próximas con vías. El modo manual es más fiable.</string>
+    <string name="alert_wifi">Avisar al perder o recuperar Wi-Fi</string>
+    <string name="alert_internet">Avisar al perder o recuperar Internet</string>
+    <string name="label_start">Iniciar monitorización</string>
+    <string name="label_stop">Detener monitorización</string>
+    <string name="btn_test">Enviar notificación de prueba</string>
+    <string name="label_last">Último evento</string>
+    <string name="history_empty">Todavía no hay eventos</string>
+    <string name="hint_watch">Reloj: activa las notificaciones de WIFILERT en Fitbit/Google Health. El móvil y el reloj deben seguir conectados por Bluetooth.</string>
+    <string name="hint_o_sm">Privacidad: solo el modo automático experimental envía coordenadas GPS aproximadas al servicio público Overpass de OpenStreetMap para buscar vías cercanas. Los otros modos no envían datos.</string>
+    <string name="hint_battery">Permite a WIFILERT funcionar sin restricciones de batería en segundo plano. La monitorización requiere una notificación permanente.</string>
+    <string name="permission_needed">Se requiere permiso de notificaciones o ubicación para esta función</string>
+    <string name="notif_monitor_channel">Servicio de monitorización</string>
+    <string name="notif_alert_channel">Avisos de conexión</string>
+    <string name="notif_service_title">WIFILERT está monitorizando</string>
+    <string name="notif_service_body">Vigilando cambios de Internet y Wi-Fi</string>
+    <string name="notif_internet_off_title">Se perdió la conexión a Internet</string>
+    <string name="notif_internet_on_title">Se recuperó la conexión a Internet</string>
+    <string name="notif_wifi_lost_title">Wi-Fi desconectada</string>
+    <string name="notif_wifi_back_title">Wi-Fi conectada de nuevo</string>
+    <string name="notif_wifi_no_internet_title">Wi-Fi sin Internet</string>
+    <string name="notif_wifi_internet_back_title">Internet por Wi-Fi recuperado</string>
+    <string name="notif_body_off">Conexión perdida. Se te avisará cuando vuelva.</string>
+    <string name="notif_body_on">La conexión a Internet vuelve a funcionar.</string>
+    <string name="notif_wifi_no_internet">Hay Wi-Fi, pero Android no puede validar el acceso a Internet.</string>
+    <string name="notif_wifi_restored">La conexión Wi-Fi vuelve a estar disponible.</string>
+    <string name="notif_test_title">Notificación de prueba de WIFILERT</string>
+    <string name="notif_test_body">Si están activadas las notificaciones de aplicaciones en el reloj, también debería aparecer allí.</string>
+    <string name="event_train_detected">Tren detectado</string>
+    <string name="event_train_ended">Ya no se detecta el tren</string>
+    <string-array name="modes">
+        <item>Monitorizar siempre</item>
+        <item>Modo tren (manual)</item>
+        <item>Modo tren (automático · experimental)</item>
+    </string-array>
+</resources>

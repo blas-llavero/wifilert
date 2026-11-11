@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">Tren + avís · Monitor d’Internet i Wi-Fi</string>
+    <string name="state_stopped">Monitoratge aturat</string>
+    <string name="state_running">Monitoratge actiu</string>
+    <string name="connectivity">Estat de la connexió</string>
+    <string name="label_internet">Internet</string>
+    <string name="label_wifi">Wi-Fi</string>
+    <string name="label_train">Tren</string>
+    <string name="state_unknown">Comprovant…</string>
+    <string name="state_connected">Connectat</string>
+    <string name="state_disconnected">Desconnectat</string>
+    <string name="state_rail_yes">Mode tren actiu</string>
+    <string name="state_rail_no">No s’ha detectat cap tren</string>
+    <string name="state_rail_wait">Esperant la detecció del tren</string>
+    <string name="monitor_mode">Mode de monitoratge</string>
+    <string name="mode_always">Monitorar sempre</string>
+    <string name="mode_manual">Mode tren (manual)</string>
+    <string name="mode_auto">Mode tren (automàtic · experimental)</string>
+    <string name="mode_hint">El mode automàtic utilitza el moviment GPS i les vies d’OpenStreetMap. Pot no detectar trens o confondre carreteres amb vies. El mode manual és més fiable.</string>
+    <string name="alert_wifi">Avisar quan la Wi-Fi es perd o torna</string>
+    <string name="alert_internet">Avisar quan Internet es perd o torna</string>
+    <string name="label_start">Iniciar el monitoratge</string>
+    <string name="label_stop">Aturar el monitoratge</string>
+    <string name="btn_test">Enviar notificació de prova</string>
+    <string name="label_last">Últim esdeveniment</string>
+    <string name="history_empty">Encara no hi ha esdeveniments</string>
+    <string name="hint_watch">Rellotge: activa les notificacions de WIFILERT a l’app Fitbit/Google Health. El mòbil i el rellotge han de seguir connectats per Bluetooth.</string>
+    <string name="hint_o_sm">Privadesa: només el mode automàtic experimental envia coordenades GPS aproximades al servei públic Overpass d’OpenStreetMap per trobar vies properes. Els altres modes no envien dades.</string>
+    <string name="hint_battery">Permet a WIFILERT funcionar sense restriccions de bateria en segon pla. El monitoratge requereix una notificació permanent.</string>
+    <string name="permission_needed">Cal permís de notificacions o ubicació per a aquesta funció</string>
+    <string name="notif_monitor_channel">Servei de monitoratge</string>
+    <string name="notif_alert_channel">Avisos de connexió</string>
+    <string name="notif_service_title">WIFILERT està monitorant</string>
+    <string name="notif_service_body">Vigilant canvis d’Internet i Wi-Fi</string>
+    <string name="notif_internet_off_title">Connexió a Internet perduda</string>
+    <string name="notif_internet_on_title">Connexió a Internet recuperada</string>
+    <string name="notif_wifi_lost_title">Wi-Fi desconnectada</string>
+    <string name="notif_wifi_back_title">Wi-Fi connectada de nou</string>
+    <string name="notif_wifi_no_internet_title">Wi-Fi sense Internet</string>
+    <string name="notif_wifi_internet_back_title">Internet per Wi-Fi recuperat</string>
+    <string name="notif_body_off">Connexió perduda. T’avisarem quan torni.</string>
+    <string name="notif_body_on">La connexió a Internet torna a funcionar.</string>
+    <string name="notif_wifi_no_internet">Hi ha Wi-Fi, però Android no pot validar l’accés a Internet.</string>
+    <string name="notif_wifi_restored">La connexió Wi-Fi torna a estar disponible.</string>
+    <string name="notif_test_title">Notificació de prova de WIFILERT</string>
+    <string name="notif_test_body">Si has activat les notificacions d’apps al rellotge, també hi hauria d’aparèixer.</string>
+    <string name="event_train_detected">Tren detectat</string>
+    <string name="event_train_ended">El tren ja no es detecta</string>
+    <string-array name="modes">
+        <item>Monitorar sempre</item>
+        <item>Mode tren (manual)</item>
+        <item>Mode tren (automàtic · experimental)</item>
+    </string-array>
+</resources>

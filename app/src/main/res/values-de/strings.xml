@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">Bahn + Alarm · Internet- und WLAN-Überwachung</string>
+    <string name="state_stopped">Überwachung beendet</string>
+    <string name="state_running">Überwachung aktiv</string>
+    <string name="connectivity">Verbindungsstatus</string>
+    <string name="label_internet">Internet</string>
+    <string name="label_wifi">WLAN</string>
+    <string name="label_train">Zug</string>
+    <string name="state_unknown">Wird geprüft…</string>
+    <string name="state_connected">Verbunden</string>
+    <string name="state_disconnected">Getrennt</string>
+    <string name="state_rail_yes">Zugmodus aktiv</string>
+    <string name="state_rail_no">Kein Zug erkannt</string>
+    <string name="state_rail_wait">Warte auf Zugerkennung</string>
+    <string name="monitor_mode">Überwachungsmodus</string>
+    <string name="mode_always">Immer überwachen</string>
+    <string name="mode_manual">Zugmodus (manuell)</string>
+    <string name="mode_auto">Zugmodus (automatisch · experimentell)</string>
+    <string name="mode_hint">Der Automatikmodus nutzt GPS-Bewegung und Bahnstrecken von OpenStreetMap. Züge können übersehen oder Straßen verwechselt werden. Der manuelle Modus ist zuverlässiger.</string>
+    <string name="alert_wifi">Bei WLAN-Verlust und Wiederkehr warnen</string>
+    <string name="alert_internet">Bei Internet-Ausfall und Wiederkehr warnen</string>
+    <string name="label_start">Überwachung starten</string>
+    <string name="label_stop">Überwachung stoppen</string>
+    <string name="btn_test">Testbenachrichtigung senden</string>
+    <string name="label_last">Letztes Ereignis</string>
+    <string name="history_empty">Noch keine Ereignisse</string>
+    <string name="hint_watch">Uhr: WIFILERT-App-Benachrichtigungen in Fitbit/Google Health aktivieren. Telefon und Uhr müssen per Bluetooth verbunden bleiben.</string>
+    <string name="hint_o_sm">Datenschutz: Nur der experimentelle Automatikmodus sendet ungefähre GPS-Koordinaten an den öffentlichen Overpass-Dienst von OpenStreetMap, um Bahnstrecken zu finden. Andere Modi senden nichts.</string>
+    <string name="hint_battery">WIFILERT in den Android-Akkueinstellungen ohne Einschränkungen im Hintergrund zulassen. Eine dauerhafte Benachrichtigung ist erforderlich.</string>
+    <string name="permission_needed">Für diese Funktion ist die Benachrichtigungs- oder Standortberechtigung erforderlich</string>
+    <string name="notif_monitor_channel">Überwachungsdienst</string>
+    <string name="notif_alert_channel">Verbindungswarnungen</string>
+    <string name="notif_service_title">WIFILERT überwacht</string>
+    <string name="notif_service_body">Internet- und WLAN-Änderungen erkennen</string>
+    <string name="notif_internet_off_title">Internetverbindung verloren</string>
+    <string name="notif_internet_on_title">Internetverbindung wiederhergestellt</string>
+    <string name="notif_wifi_lost_title">WLAN getrennt</string>
+    <string name="notif_wifi_back_title">WLAN wieder verbunden</string>
+    <string name="notif_wifi_no_internet_title">WLAN ohne Internet</string>
+    <string name="notif_wifi_internet_back_title">WLAN-Internet wiederhergestellt</string>
+    <string name="notif_body_off">Verbindung verloren. Bei Wiederkehr folgt eine Warnung.</string>
+    <string name="notif_body_on">Ihre Internetverbindung funktioniert wieder.</string>
+    <string name="notif_wifi_no_internet">WLAN verbunden, aber Android bestätigt keinen Internetzugang.</string>
+    <string name="notif_wifi_restored">Die WLAN-Verbindung ist wieder verfügbar.</string>
+    <string name="notif_test_title">WIFILERT-Testbenachrichtigung</string>
+    <string name="notif_test_body">Wenn App-Benachrichtigungen auf der Uhr aktiv sind, sollte die Nachricht auch dort erscheinen.</string>
+    <string name="event_train_detected">Zug erkannt</string>
+    <string name="event_train_ended">Zug nicht mehr erkannt</string>
+    <string-array name="modes">
+        <item>Immer überwachen</item>
+        <item>Zugmodus (manuell)</item>
+        <item>Zugmodus (automatisch · experimentell)</item>
+    </string-array>
+</resources>

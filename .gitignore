@@ -1,0 +1,28 @@
+.gradle/
+.idea/
+local.properties
+**/build/
+*.iml
+*.apk
+*.aab
+.DS_Store
+# Explicit policy: never commit binary audio, video or images until approved.
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.aac
+*.m4a
+*.mp4
+*.webm
+*.mov
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.svg
+
+# Explicitly approved WIFILERT artwork only (2026-11-11).
+!docs/media/wifilert_logo_approved.png
+!app/src/main/res/mipmap-*/ic_launcher.png

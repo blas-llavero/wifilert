@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">القطار والتنبيه · مراقبة الإنترنت وWi-Fi</string>
+    <string name="state_stopped">توقفت المراقبة</string>
+    <string name="state_running">المراقبة نشطة</string>
+    <string name="connectivity">حالة الاتصال</string>
+    <string name="label_internet">الإنترنت</string>
+    <string name="label_wifi">Wi-Fi</string>
+    <string name="label_train">القطار</string>
+    <string name="state_unknown">جارٍ التحقق…</string>
+    <string name="state_connected">متصل</string>
+    <string name="state_disconnected">غير متصل</string>
+    <string name="state_rail_yes">وضع القطار نشط</string>
+    <string name="state_rail_no">لم يتم رصد قطار</string>
+    <string name="state_rail_wait">بانتظار اكتشاف القطار</string>
+    <string name="monitor_mode">وضع المراقبة</string>
+    <string name="mode_always">المراقبة دائمًا</string>
+    <string name="mode_manual">وضع القطار (يدوي)</string>
+    <string name="mode_auto">وضع القطار (تلقائي · تجريبي)</string>
+    <string name="mode_hint">يستخدم الوضع التلقائي حركة GPS وخطوط السكك من OpenStreetMap. قد لا يكتشف بعض القطارات أو يخلط بينها وبين طرق قريبة. الوضع اليدوي أكثر موثوقية.</string>
+    <string name="alert_wifi">التنبيه عند فقد Wi-Fi أو عودته</string>
+    <string name="alert_internet">التنبيه عند انقطاع الإنترنت أو عودته</string>
+    <string name="label_start">بدء المراقبة</string>
+    <string name="label_stop">إيقاف المراقبة</string>
+    <string name="btn_test">إرسال إشعار تجريبي</string>
+    <string name="label_last">آخر حدث</string>
+    <string name="history_empty">لا توجد أحداث بعد</string>
+    <string name="hint_watch">الساعة: فعّل إشعارات تطبيق WIFILERT في Fitbit/Google Health. يجب بقاء الهاتف والساعة متصلين عبر Bluetooth.</string>
+    <string name="hint_o_sm">الخصوصية: يرسل وضع القطار التلقائي التجريبي فقط إحداثيات GPS تقريبية إلى خدمة Overpass العامة من OpenStreetMap للعثور على السكك القريبة. لا ترسل الأوضاع الأخرى بيانات.</string>
+    <string name="hint_battery">اسمح لتطبيق WIFILERT بالعمل في الخلفية دون قيود بطارية Android. تتطلب المراقبة إشعارًا دائمًا.</string>
+    <string name="permission_needed">يلزم إذن الإشعارات أو الموقع لهذه الميزة</string>
+    <string name="notif_monitor_channel">خدمة المراقبة</string>
+    <string name="notif_alert_channel">تنبيهات الاتصال</string>
+    <string name="notif_service_title">WIFILERT يراقب الاتصال</string>
+    <string name="notif_service_body">تتبع تغيّرات الإنترنت وWi-Fi</string>
+    <string name="notif_internet_off_title">انقطع اتصال الإنترنت</string>
+    <string name="notif_internet_on_title">عاد اتصال الإنترنت</string>
+    <string name="notif_wifi_lost_title">انقطع Wi-Fi</string>
+    <string name="notif_wifi_back_title">عاد اتصال Wi-Fi</string>
+    <string name="notif_wifi_no_internet_title">Wi-Fi بلا إنترنت</string>
+    <string name="notif_wifi_internet_back_title">عاد الإنترنت عبر Wi-Fi</string>
+    <string name="notif_body_off">فُقد الاتصال. سيتم إخطارك عند عودته.</string>
+    <string name="notif_body_on">يعمل اتصال الإنترنت مجددًا.</string>
+    <string name="notif_wifi_no_internet">Wi-Fi متصل، لكن Android لا يستطيع التحقق من وصول الإنترنت.</string>
+    <string name="notif_wifi_restored">أصبح اتصال Wi-Fi متاحًا مرة أخرى.</string>
+    <string name="notif_test_title">إشعار WIFILERT التجريبي</string>
+    <string name="notif_test_body">إذا كانت إشعارات التطبيقات مفعلة في الساعة، فمن المفترض أن يظهر عليها أيضًا.</string>
+    <string name="event_train_detected">تم اكتشاف قطار</string>
+    <string name="event_train_ended">لم يعد القطار مكتشفًا</string>
+    <string-array name="modes">
+        <item>المراقبة دائمًا</item>
+        <item>وضع القطار (يدوي)</item>
+        <item>وضع القطار (تلقائي · تجريبي)</item>
+    </string-array>
+</resources>

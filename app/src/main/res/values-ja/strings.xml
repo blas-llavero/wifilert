@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WIFILERT</string>
+    <string name="app_tagline">鉄道 + 通知 · インターネットとWi-Fiを監視</string>
+    <string name="state_stopped">監視停止中</string>
+    <string name="state_running">監視中</string>
+    <string name="connectivity">接続状況</string>
+    <string name="label_internet">インターネット</string>
+    <string name="label_wifi">Wi-Fi</string>
+    <string name="label_train">列車</string>
+    <string name="state_unknown">確認中…</string>
+    <string name="state_connected">接続済み</string>
+    <string name="state_disconnected">切断</string>
+    <string name="state_rail_yes">列車モード有効</string>
+    <string name="state_rail_no">列車を検出していません</string>
+    <string name="state_rail_wait">列車の検出待ち</string>
+    <string name="monitor_mode">監視モード</string>
+    <string name="mode_always">常に監視</string>
+    <string name="mode_manual">列車モード（手動）</string>
+    <string name="mode_auto">列車モード（自動・実験的）</string>
+    <string name="mode_hint">自動モードはGPSの移動とOpenStreetMapの線路情報を使用します。列車を見逃したり、近くの道路を誤認する場合があります。手動モードの方が確実です。</string>
+    <string name="alert_wifi">Wi-Fiの切断と復旧を通知</string>
+    <string name="alert_internet">インターネットの切断と復旧を通知</string>
+    <string name="label_start">監視を開始</string>
+    <string name="label_stop">監視を停止</string>
+    <string name="btn_test">テスト通知を送信</string>
+    <string name="label_last">最近のイベント</string>
+    <string name="history_empty">イベントはまだありません</string>
+    <string name="hint_watch">腕時計：Fitbit/Google HealthでWIFILERTのアプリ通知を有効にしてください。スマートフォンと腕時計はBluetooth接続が必要です。</string>
+    <string name="hint_o_sm">プライバシー：実験的な自動列車モードだけが、付近の線路を探すために概略GPS座標をOpenStreetMapの公開Overpassサービスへ送信します。他のモードでは送信しません。</string>
+    <string name="hint_battery">Androidの電池設定でWIFILERTのバックグラウンド動作を制限しないでください。監視には常駐通知が必要です。</string>
+    <string name="permission_needed">この機能には通知または位置情報の権限が必要です</string>
+    <string name="notif_monitor_channel">監視サービス</string>
+    <string name="notif_alert_channel">接続通知</string>
+    <string name="notif_service_title">WIFILERTが監視中</string>
+    <string name="notif_service_body">インターネットとWi-Fiの変化を監視</string>
+    <string name="notif_internet_off_title">インターネット接続が切れました</string>
+    <string name="notif_internet_on_title">インターネット接続が復旧しました</string>
+    <string name="notif_wifi_lost_title">Wi-Fiが切断されました</string>
+    <string name="notif_wifi_back_title">Wi-Fiが再接続しました</string>
+    <string name="notif_wifi_no_internet_title">Wi-Fiにインターネット接続なし</string>
+    <string name="notif_wifi_internet_back_title">Wi-Fiのインターネットが復旧</string>
+    <string name="notif_body_off">接続が切れました。復旧時に通知します。</string>
+    <string name="notif_body_on">インターネットが再び利用できます。</string>
+    <string name="notif_wifi_no_internet">Wi-Fiには接続していますが、Androidがインターネット接続を確認できません。</string>
+    <string name="notif_wifi_restored">Wi-Fi接続が再び利用可能です。</string>
+    <string name="notif_test_title">WIFILERTテスト通知</string>
+    <string name="notif_test_body">腕時計のアプリ通知が有効なら、そこにも表示されます。</string>
+    <string name="event_train_detected">列車を検出しました</string>
+    <string name="event_train_ended">列車を検出できなくなりました</string>
+    <string-array name="modes">
+        <item>常に監視</item>
+        <item>列車モード（手動）</item>
+        <item>列車モード（自動・実験的）</item>
+    </string-array>
+</resources>
