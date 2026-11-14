@@ -28,7 +28,19 @@
 
 **How to use:** choose **Always monitor** to test anywhere, **Train mode (manual)** before boarding for reliable tunnel alerts, or **Train mode (automatic · experimental)** to alert only after GPS motion and nearby railway tracks suggest the phone is on a train. Toggle Wi-Fi and/or internet alerts before starting. Tap **Stop monitoring** to finish. No login is needed.
 
-**Fitbit Charge 6 and similar watches:** in **Fitbit / Google Health → connected device → Notifications → App Notifications**, turn on WIFILERT. Keep Bluetooth connected and permit watch vibration; turning on **Always Vibrate** may help on supported models. The app posts standard Android notifications; the Fitbit software is responsible for mirroring them to the watch. This is not a direct BLE command to the watch, so watch delivery is not guaranteed.
+### Fitbit Charge 6 notifications (Google Health / Fitbit app)
+
+To receive **WIFILERT notifications on your Fitbit Charge 6**, first make sure Android notifications for WIFILERT are enabled on the phone and that the watch is paired and connected over Bluetooth. Then open the **Fitbit app (Google Health ecosystem)**, select the connected Fitbit Charge 6 and open **Notifications**:
+
+1. Under **General**, leave **Mirror your phone** **OFF**, as shown in the tested configuration. This option mirrors all supported phone notifications and is not required when WIFILERT is selected individually.
+2. Open **App notifications** and switch **WIFILERT ON** (blue toggle). Other applications may remain OFF; you do not need to enable all apps.
+3. Return to **Notifications**, scroll down to **Vibration**, and switch **Always vibrate ON** (blue toggle). The option is described as sending notifications and vibrating the watch even when the phone is in Do Not Disturb or silent mode. Actual watch behavior can still depend on its settings and connection.
+4. **Calls**, **Text messages**, **Calendar events**, **Emails**, **Quick replies**, and **Use transliteration** are optional and are not required to enable WIFILERT alerts.
+5. Open **WIFILERT → Send test notification** and check whether the notification appears on the phone **and** the watch. If it only appears on the phone, check Android's WIFILERT notification permission, the Fitbit app's notification-access permission, Bluetooth connectivity, watch notification/silent settings, and battery restrictions on the Fitbit app.
+
+**Important distinction:** These steps configure **watch notifications forwarded from the phone**, not the appearance of notifications on the phone itself. WIFILERT posts standard Android notifications locally; Fitbit/Google's companion software decides whether to deliver them to the watch. Watch delivery is not guaranteed. The UI wording can change with Fitbit app updates.
+
+
 
 **If Android stops monitoring:** under Android **Settings → Apps → WIFILERT → Battery**, permit unrestricted/background usage as supported by your phone. Manufacturer-specific battery optimization and Do Not Disturb can still delay or silence alerts. If you close the monitoring service, reopen the app and start it again.
 
